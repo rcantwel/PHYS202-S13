@@ -6,7 +6,6 @@ def pointPotential(x,y,q, posx, posy):
     return Vxy
 
 def dipolePotential(x,y,q,d):
-""Takes as arguments the point or points in space where you want to know the potential, the size of the charges q, and the separation distance d between the charges"""
     V1 = pointPotential(x,y,q,-d/2,0)
     V2 = pointPotential(x,y,q,d/2,0)
     Vxy = V1 - V2	
