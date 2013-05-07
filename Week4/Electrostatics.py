@@ -10,3 +10,11 @@ def dipolePotential(x,y,q,d):
     V2 = pointPotential(x,y,q,d/2,0)
     Vxy = V1 - V2	
     return Vxy
+
+def pointField(x,y,q,Xq,Yq):
+    Ex = (kq(x-Xq))/(((x-Xq)**2+(y-Yq)**2)**1/2)
+    Ey = (kq(y-Yq))/(((x-Xq)**2+(y-Yq)**2)**1/2)
+    Exy = Ex - Ey 
+"""The function will return a value at a certain point for (x,y) that 
+indicates a point charge part of an electric field"""
+
