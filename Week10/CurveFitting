@@ -1,0 +1,13 @@
+def LinearLeastSquaresFit(x,y): 
+"""Takes in arrays representing (x,y) values for a set of linearly varying data 
+and perform a linear least squares regression. Return the resulting slope and 
+intercept parameters of the best fit line with their uncertainties.""" 
+x = 1/n * sum(x) 
+y = 1/n * sum(y)
+x2 = 1/n * sum(x**2)
+xy = 1/n * sum(x*y)
+slope = m
+intercept = b 
+deviation = y -(m*x + b) 
+uncertainty = sqrt(1/(n-2) - sum (deviation**2))
+
